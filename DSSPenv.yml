@@ -1,0 +1,7 @@
+name: DSSPenv
+channels:
+  - mx
+  - defaults
+dependencies:
+  - reduce=3.24=0
+prefix: /home/lynda/miniconda3/envs/DSSPenv
