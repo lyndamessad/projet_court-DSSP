@@ -1,15 +1,19 @@
 """
-le script pdbHydrogene est conçu pour des fichiers au format .pdb. 
-En entrant le nom d'un fichier pdb d'une protéine déja existant dans le
-repertoire, le module récupere le fichier associé, excécute le programme Réduce 
-(préalablement installé sur la machine) afin d'ajouter les liaisons hydrogenes. 
-Un fichier output est founit pour chaque protéine en input 
+The pdbHydrogene script is designed for files in .pdb format.
+By entering the name of a pdb file of a protein already existing in the
+directory, the module retrieves the associated file, runs the Reduce program
+(previously installed on the machine) in order to add the hydrogen bonds.
+An output file is provided for each protein in input
 """
 import sys
 import os
 
 
 def pdbReduce(pdb):
+    """
+    This function takes a pdb file
+    returns a pdb file which has the hydrogen atoms added by the Reduce program
+    """
     if os.popen("reduce -version") == "/bin/sh: 1: reduce: not found":
         print(" reduce n est pas installer. \n")
         print("Merci d installer reduce : conda install -c mx reduce")
