@@ -1,4 +1,4 @@
-__auteurs__ = ("Leatitia HOLLIER, Lynda MESSAD DIT MAHTAL")
+__auteurs__ = ("Laetitia HOLLIER, Lynda MESSAD DIT MAHTAL")
 __version__ = "1.0.0"
 __date__ = "2021-05-29"
 
