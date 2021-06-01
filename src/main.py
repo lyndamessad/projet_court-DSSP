@@ -2,6 +2,8 @@ __auteurs__ = ("Laetitia HOLLIER, Lynda MESSAD DIT MAHTAL")
 __version__ = "1.0.0"
 __date__ = "2021-05-29"
 
+
+# Importing the modules necessary for the proper functioning of the script
 import sys
 import os
 import getpass
@@ -28,9 +30,11 @@ from pdbHydrogene import pdbReduce
             print("le fichier {} n existe pas dans le repertoire{}".format(arg,os.getcwd()))
     return file
 """
+
 def verify_args(args):
     """
-    Récupère le nom du fichier PDB.
+    This function takes the arguments given in the python command
+    returns the name of the pdb file
     """
     if len(args) != 2:
         sys.exit("Wrong number of arguments.\n"
@@ -47,7 +51,11 @@ def verify_args(args):
                  "Usage: python3 main.py file.pdb".format(f_in))
     return f_in
 
+
 def get_args():
+    """
+    COM A FAIRE
+    """
     # help
     parser = argparse.ArgumentParser(description=__doc__, usage=
                                      "{0} -h".format(sys.argv[0]))
@@ -68,9 +76,11 @@ def get_args():
 def main():
     #arguments=get_args()
     #print(arguments)
-
+    
+    # Verify the existence of arguments given in the python command
     args = verify_args(sys.argv)
     print(type(args))
+    # Produce the pdb file which contain the hydrogens atoms added by the Reduce program
     pdbH=pdbReduce(args)
     print(pdbH)
 if __name__ == '__main__':
