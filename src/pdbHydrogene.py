@@ -5,6 +5,7 @@ directory, the module retrieves the associated file, runs the Reduce program
 (previously installed on the machine) in order to add the hydrogen bonds.
 An output file is provided for each protein in input
 """
+# Importing the modules necessary for a proper functioning of the script
 import sys
 import os
 
