@@ -192,27 +192,27 @@ def main():
     # ---------------------------------------
     # STEPS FOR PARSING THE PDB HYDROGEN FILE 
     # ---------------------------------------
-    # Name of the file pdbH pre-parsing
+    # Name the file pdbH pre-parsing
     pdbH_pre = get_pre_parsing(pdbH)
     pre_parsing = pdbH_pre[0]
-    print("\npre_parsing : {}".format(pre_parsing))
-    # List pre-parsing with the coordinates of the atoms N,CA,C,O,H
+    print("\npre_parsing [0] : {}".format(pre_parsing))
+    # Give the pre-parsing list with the coordinates of the atoms N,CA,C,O,H
     list_pre_parsing = pdbH_pre[1]
-    print("\nlist_pre_parsing : {}".format(list_pre_parsing[0]))
+    print("\nlist_pre_parsing [0] : {}".format(list_pre_parsing[0]))
     
     # Count of atoms per residu 
     count_residu = get_count_residu(list_pre_parsing)
-    print("\ncount_residu : {}".format(count_residu))
+    #print("\ncount_residu : {}".format(count_residu))
     # If for a residu, there are less than 5 atoms, this residu must be deleted because it means that the 5 atoms (N,CA,C,O,H) aren't there !
     residu_del = get_deleted(count_residu)
-    print("\nresidu_del : {}".format(residu_del))
+    print("\n The residus to delete (residu_del) : {}".format(residu_del))
 
     # Parsing of the protein 
     pdbH_parsing = get_parsing(pre_parsing, residu_del)
     print("\npdbH_parsing : {}".format(pdbH_parsing))
-    # List parsing with the coordinates of residu contaning all of these atoms: N,CA,C,O,H
+    # Give the parsing list with the coordinates of residu contaning all of these atoms: N,CA,C,O,H
     list_parsing = get_list(list_pre_parsing, residu_del)
-    print("\nlist_parsing : {}".format(list_parsing[0]))
+    print("\nlist_parsing [0] : {}".format(list_parsing[0]))
      # ---------------------------------------
 
 if __name__ == '__main__':
