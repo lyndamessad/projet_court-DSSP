@@ -9,7 +9,8 @@ Pour le bon fonctionnement des scripts, il faudrait etre dans un environnement c
 
 
 
- II.	Description du programme:
+ 	II.	Description du programme:
+
 Le programme se base sur le langage python3 sous forme de différentes fonctions.
 Il se compose d'un script python exécutable en une ligne de commande sur des fichiers PDB:
     --> python main.py file.pdb
