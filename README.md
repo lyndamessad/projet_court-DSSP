@@ -13,7 +13,9 @@ Pour le bon fonctionnement des scripts, il faudrait etre dans un environnement c
 
 Le programme se base sur le langage python3 sous forme de différentes fonctions.
 Il se compose d'un script python exécutable en une ligne de commande sur des fichiers PDB
+
     python3 src/dssp.py Data/file.pdb
+    
 avec file.pdb pouvant être les fichiers pdb présents dans le dossier Data de ce Github
     
  --> dans le script main.py, celui importe en module le code pdbHydrogene.py permettant d'exéctuer Reduce sur le fichier PDB entrée dans la commande principale
