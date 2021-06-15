@@ -7,20 +7,17 @@ Réalisation d'un projet court dans le cadre d'une formation universitaire.
 Ce projet consite à implémenter le programme de Désignation de structures secondaires des protéine(DSSP)
 Pour le bon fonctionnement des scripts, il faudrait etre dans un environnement conda avec python3.
 
-
+	
 
  	II.	Description du programme:
 
 Le programme se base sur le langage python3 sous forme de différentes fonctions.
-Il se compose d'un script python exécutable en une ligne de commande sur des fichiers PDB:
-
-    python3 dssp.py file.pdb
+Il se compose d'un script python exécutable en une ligne de commande sur des fichiers PDB
+    python3 src/dssp.py Data/file.pdb
+avec file.pdb pouvant être les fichiers pdb présents dans le dossier Data de ce Github
     
-    avec file.pdb pouvant être les fichiers pdb présents dans le dossier Data de ce Github
-    Attention : vérifiez que vous ayez bien les fichiers pdb dans le même dossier que les scripts
-    --> dans le script main.py, celui importe en module le code pdbHydrogene.py permettant d'exéctuer Reduce sur le fichier PDB entrée dans la commande principale
+ --> dans le script main.py, celui importe en module le code pdbHydrogene.py permettant d'exéctuer Reduce sur le fichier PDB entrée dans la commande principale
     
-
 
 
 	III.	Les modules et environnement requis:
@@ -31,6 +28,10 @@ Il se compose d'un script python exécutable en une ligne de commande sur des fi
    • Getpass : "donne un moyen sécurisé de gérer les invites de mot de passe où les programmes interagissent avec les utilisateurs via le terminal"
    • Numpy : permet d’effectuer des calculs numériques avec Python
    • Argparse : "facilite l'écriture d'interfaces de ligne de commande conviviales, définit les arguments dont il a besoin, et argparse trouvera comment les analyser en dehors de sys. argv
+   • Reduce : programme qui permet d'ajouter les atomes d'hydrogene au fichier pdb. 
+   	Tout ces modules sont disponibles dans l'environnement conda DSSPenv qui devrait etre installer et activer avant de lancer ce programme
+	conda env create -f DSSPenv.yml
+	conda activate DSSPenv
    
    
 
