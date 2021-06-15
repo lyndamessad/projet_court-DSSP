@@ -1,4 +1,4 @@
-USER  MOD reduce.3.3.160602 H: found=0, std=0, add=1759, rem=0, adj=54
+USER  MOD reduce.3.24.130724 H: found=0, std=0, add=1759, rem=0, adj=56
 HEADER    HYDROLASE                               17-MAY-76   1EST
 TITLE     THE ATOMIC STRUCTURE OF CRYSTALLINE PORCINE PANCREATIC ELASTASE AT 2.5
 TITLE    2 ANGSTROMS RESOLUTION. COMPARISONS WITH THE STRUCTURE OF ALPHA-
@@ -549,6 +549,7 @@ USER  MOD Single : A  36CSER OG  :   rot  180:sc=       0
 USER  MOD Single : A  37 SER OG  :   rot  180:sc=       0
 USER  MOD Single : A  41 THR OG1 :   rot  180:sc=       0
 USER  MOD Single : A  45 THR OG1 :   rot   99:sc=   0.745
+USER  MOD Single : A  53 MET CE  :methyl  159:sc=  -0.142   (180deg=-0.875)
 USER  MOD Single : A  54 THR OG1 :   rot   91:sc=   0.295
 USER  MOD Single : A  64 THR OG1 :   rot  180:sc=       0
 USER  MOD Single : A  79 THR OG1 :   rot   79:sc=    1.83
@@ -580,6 +581,7 @@ USER  MOD Single : A 174 SER OG  :   rot  180:sc=       0
 USER  MOD Single : A 175 THR OG1 :   rot  180:sc=       0
 USER  MOD Single : A 177 LYS NZ  :NH3+   -131:sc=   0.427   (180deg=-0.121)
 USER  MOD Single : A 179 SER OG  :   rot  121:sc=   0.293
+USER  MOD Single : A 180 MET CE  :methyl -126:sc= -0.0492   (180deg=-0.226)
 USER  MOD Single : A 189 SER OG  :   rot   93:sc=   0.218
 USER  MOD Single : A 207 TYR OH  :   rot  180:sc=       0
 USER  MOD Single : A 213 THR OG1 :   rot  -37:sc=    1.05
@@ -1210,9 +1212,9 @@ ATOM      0  HB2 MET A  53       2.485  25.906  48.641  1.00  0.00           H  
 ATOM      0  HB3 MET A  53       1.687  26.942  47.793  1.00  0.00           H   new
 ATOM      0  HG2 MET A  53      -0.126  25.405  47.665  1.00  0.00           H   new
 ATOM      0  HG3 MET A  53       0.670  24.415  48.569  1.00  0.00           H   new
-ATOM      0  HE1 MET A  53      -0.781  28.348  49.967  1.00  0.00           H   new
-ATOM      0  HE2 MET A  53       0.495  28.144  49.051  1.00  0.00           H   new
-ATOM      0  HE3 MET A  53      -0.947  27.820  48.484  1.00  0.00           H   new
+ATOM      0  HE1 MET A  53      -1.055  28.265  49.797  1.00  0.00           H   new
+ATOM      0  HE2 MET A  53       0.469  28.251  49.366  1.00  0.00           H   new
+ATOM      0  HE3 MET A  53      -0.648  27.796  48.340  1.00  0.00           H   new
 ATOM    320  N   THR A  54       0.999  24.256  45.011  1.00  0.00           N
 ATOM    321  CA  THR A  54      -0.053  24.100  43.993  1.00  0.00           C
 ATOM    322  C   THR A  54      -0.996  22.939  44.316  1.00  0.00           C
@@ -3196,9 +3198,9 @@ ATOM      0  HB2 MET A 180     -14.257  22.298  51.072  1.00  0.00           H  
 ATOM      0  HB3 MET A 180     -13.447  22.999  49.939  1.00  0.00           H   new
 ATOM      0  HG2 MET A 180     -11.951  21.182  49.869  1.00  0.00           H   new
 ATOM      0  HG3 MET A 180     -12.730  20.485  51.026  1.00  0.00           H   new
-ATOM      0  HE1 MET A 180     -13.361  18.087  48.245  1.00  0.00           H   new
-ATOM      0  HE2 MET A 180     -12.028  18.878  48.569  1.00  0.00           H   new
-ATOM      0  HE3 MET A 180     -12.872  18.234  49.744  1.00  0.00           H   new
+ATOM      0  HE1 MET A 180     -12.716  18.516  47.947  1.00  0.00           H   new
+ATOM      0  HE2 MET A 180     -12.098  18.749  49.386  1.00  0.00           H   new
+ATOM      0  HE3 MET A 180     -13.446  17.933  49.225  1.00  0.00           H   new
 ATOM   1329  N   VAL A 181     -12.736  25.405  51.232  1.00  0.00           N
 ATOM   1330  CA  VAL A 181     -13.268  26.775  51.309  1.00  0.00           C
 ATOM   1331  C   VAL A 181     -14.093  27.086  50.063  1.00  0.00           C

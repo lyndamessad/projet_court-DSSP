@@ -597,7 +597,7 @@ def get_write(pdbH, dico, bend, chirality, H, G, I, E):
     """
     This function takes the name of a pdb file, a dictionary
     """
-    args = str(pdbH).split("H")[0] +"_parsing_results." + "txt"
+    args = str(pdbH).split("H")[0] +"_parsing_results.txt"
     with open(args, "w") as filout:
         filout.write("FILE PARSING OF THE PEPTIDE : {}".format(str(args).split("_")[0]))
         filout.write("\nResidues with coordinates of each of their atoms\n")
@@ -760,7 +760,6 @@ def main():
 
 
     # ---------------------------------------
-    print(H)
 
 if __name__ == '__main__':
     main()
